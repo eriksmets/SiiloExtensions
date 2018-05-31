@@ -5,7 +5,8 @@ Current features:
 ------
 
 * provides local push notifications if window is not in focus.
-* provides support for unread messages badge 
+* push notification includes unread count and last sender
+* provides support for unread messages badge on OSX
 
 Usage:
 -----
@@ -15,5 +16,5 @@ Usage:
 Planned:
 ----
 
+* windows badge support
 * message content
-* message sender
