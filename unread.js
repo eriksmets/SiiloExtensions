@@ -1,6 +1,6 @@
 var lastnotificationcount = 0;
 
-console.log(__dirname);
+
 
 function refreshUnreadTotalExtension()
 {        
@@ -34,12 +34,6 @@ function refreshUnreadTotalExtension()
 		}
 		lastnotificationcount = totalunread;
 	
-/*
-		if(process.platform === "win32")
-		{
-			mainWindow.setOverlayIcon(__dirname + '/changes.png',"NIEUW BERICHT");
-		}
-*/
 	
 	} else {
 		//console.log('  total unread: none'); 
