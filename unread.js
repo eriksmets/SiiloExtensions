@@ -1,5 +1,7 @@
 var lastnotificationcount = 0;
 
+console.log(__dirname);
+
 function refreshUnreadTotalExtension()
 {        
     var totalunread = 0;
@@ -17,7 +19,8 @@ function refreshUnreadTotalExtension()
 		document.title = 'Siilo (' + totalunread + ')';
 		
 		var unreadconvofirst = document.getElementsByClassName("conversation-main-name")[0].innerHTML;
-		var zin = 'Siilo ('+ totalunread + '): nieuw bericht in ' + unreadconvofirst;
+		var unreadconvofirsttext = document.getElementsByClassName("conversation-message-text")[0].innerHTML.replace(/(<([^>]+)>)/ig,"").replace( /\s\s+/g, ' ' );
+		var zin = 'Siilo ('+ totalunread + '): ' + unreadconvofirst + ':\r\n' + unreadconvofirsttext;
 		console.log(zin);
 		
 		if(totalunread > lastnotificationcount && !document.hasFocus())
@@ -31,9 +34,26 @@ function refreshUnreadTotalExtension()
 		}
 		lastnotificationcount = totalunread;
 	
+/*
+		if(process.platform === "win32")
+		{
+			mainWindow.setOverlayIcon(__dirname + '/changes.png',"NIEUW BERICHT");
+		}
+*/
+	
 	} else {
 		//console.log('  total unread: none'); 
 		document.title = 'Siilo';
+		
+/*
+		if(process.platform === "win32")
+		{
+			
+			mainWindow.setOverlayIcon(null,null);
+		}
+*/
+		
+		
 	}
     
     
