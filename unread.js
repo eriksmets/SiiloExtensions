@@ -16,17 +16,13 @@ function refreshUnreadTotalExtension()
 		}
 		document.title = 'Siilo (' + totalunread + ')';
 		
+		var unreadconvofirst = document.getElementsByClassName("conversation-main-name")[0].innerHTML;
+		var zin = 'Siilo ('+ totalunread + '): nieuw bericht in ' + unreadconvofirst;
+		console.log(zin);
+		
 		if(totalunread > lastnotificationcount && !document.hasFocus())
 		{
-			if(totalunread > 1)
-			{
-				var zin = 'Siilo: Er zijn '+ totalunread + ' nieuwe berichten';
-			}
-			else
-			{
-				var zin = 'Siilo: Er is '+ totalunread + ' nieuw bericht';
-				
-			}
+						
 			
 			let myNotification = new Notification('Siilo', {
 					body: zin
