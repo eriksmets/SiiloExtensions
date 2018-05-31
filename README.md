@@ -11,7 +11,17 @@ Current features:
 Usage:
 -----
 
-`see make.sh`
+`see make.sh to generate .zip`
+
+On Windows:
+
+Use this [Fork of Nativefier](https://github.com/rdcvnh/nativefier) with Notification Support to generate zip.
+
+`Instal to C:\Apps\Siilo-win32-x64`
+
+`run  C:\Apps\Siilo-win32-x64\ShortcutCreator.bat`
+
+`Open Siilo from Start Menu`
 
 Planned:
 ----
