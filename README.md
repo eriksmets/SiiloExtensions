@@ -7,6 +7,7 @@ Current features:
 * provides local push notifications if window is not in focus.
 * push notification includes unread count and last sender
 * provides support for unread messages badge on OSX
+* show unread message count in Taskbar Name on Windows
 
 Usage:
 -----
