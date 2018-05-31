@@ -10,7 +10,7 @@ Current features:
 Usage:
 -----
 
-`nativefier --name "Siilo" https://web.siilo.com --single-instance --counter  --inject ./unread.js`
+`see make.sh`
 
 Planned:
 ----
