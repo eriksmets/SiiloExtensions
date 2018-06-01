@@ -4,7 +4,7 @@ This script extends Siilo Web App https://siilo.com as an Electron Desktop App w
 Current features:
 =====
 
-* provides local push notifications if window is not in focus.
+* provides local push notifications if window is not in focus. The app needs to be open.
 * push notification includes 
     * unread count
     * last sender
