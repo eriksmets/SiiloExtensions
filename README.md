@@ -2,19 +2,28 @@
 This script extends Siilo Web App https://siilo.com as an Electron Desktop App with [Nativefier](https://github.com/jiahaog/nativefier) 's --inject and --counter options.
 
 Current features:
-------
+=====
 
 * provides local push notifications if window is not in focus.
-* push notification includes unread count and last sender
+* push notification includes 
+    * unread count
+    * last sender
+    * last message content
 * provides support for unread messages badge on OSX
 * show unread message count in Taskbar Name on Windows
 
 Usage:
------
+=====
 
 `see make.sh to generate .zip`
 
+On OSX
+------
+
+Open .app
+
 On Windows:
+----------
 
 Use this [Fork of Nativefier](https://github.com/rdcvnh/nativefier) with Notification Support to generate zip.
 
@@ -25,7 +34,6 @@ Use this [Fork of Nativefier](https://github.com/rdcvnh/nativefier) with Notific
 `Open Siilo from Start Menu`
 
 Planned:
-----
+=====
 
-* windows badge support
-* message content
+* windows badge support ?
