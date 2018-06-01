@@ -16,6 +16,8 @@ Current features:
 Usage:
 =====
 
+Requires: [Nativefier](https://github.com/jiahaog/nativefier)
+
 `see make.sh to generate .zip`
 
 On OSX
