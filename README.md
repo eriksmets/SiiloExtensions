@@ -11,6 +11,7 @@ Current features:
     * last message content
 * provides support for unread messages badge on OSX
 * show unread message count in Taskbar Name on Windows
+* fixes line breaks in Siilo's detailed case view
 
 Usage:
 =====
